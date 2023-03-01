@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enrollment Form</title>
+    <style>
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        body{
+            background-color: #ebc86e;
+        }
+      body > div {
+        margin: 10px;
+      }
+      .address, #city, #state, #country{
+        margin: 3px 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Form</h1>
+    <div>
+      <label id="fnm">First Name: <input type="text" name="fname" /></label>
+      <label id="lnm">Last Name: <input type="text" name="lname" /></label>
+    </div>
+    <div>Username: <input type="text" name="username" /></div>
+    <div>Birthdate <input type="date" name="birthdate" /></div>
+    <div>
+      Gender: <input type="radio" name="gender" value="male" />Male
+      <input type="radio" name="gender" value="female" />Female
+      <input type="radio" name="gender" value="others" />Others
+    </div>
+    <div>
+      Hobbies:
+      <input type="checkbox" name="hobbies" value="dance" />Dancing
+      <input type="checkbox" name="hobbies" value="sing" />Singing
+      <input type="checkbox" name="hobbies" value="read" />Reading
+      <input type="checkbox" name="hobbies" value="travel" />Travelling
+      <input type="checkbox" name="hobbies" value="others" />others
+    </div>
+    <div>
+      Upload profile picture: <input type="file" name="picture" id="" />
+    </div>
+    <div>
+      <fieldset>
+        <legend>Address</legend>
+        <div class="address">Street Address Line 1</div>
+        <textarea
+          class="address"
+          cols="70"
+          rows="2"
+          placeholder="Enter Address 1"
+        ></textarea>
+        <div class="address">Street Address Line 2</div>
+        <textarea
+          class="address"
+          cols="70"
+          rows="2"
+          placeholder="Enter Address 2"
+        ></textarea>
+
+        <div class="address">
+          State:
+          <select name="state" id="state">
+            <option value="">--select--</option>
+            <option value="tamilnadu   ">Tamil Nadu</option>
+            <option value="Uttar pradesh">Uttar Pradesh</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Bihar">Bihar</option>
+          </select>
+        </div>
+        <div class="address">
+          City
+          <select name="city" id="city">
+            <option value="">--select--</option>
+            <option value="delhi">Delhi</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="hyderabad">Hyderabad</option>
+            <option value="chennai">Chennai</option>
+          </select>
+        </div>
+        <div class="address">
+          Country
+          <select name="country" id="country">
+            <option value="">--select--</option>
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="CHINA">CHINA</option>
+            <option value="nepal">NEPAL</option>
+          </select>
+        </div>
+      </fieldset>
+    </div>
+    <div>
+      Courses
+      <select name="course" id="">
+        <option value="fullstackdevelopment">Full Stack Development</option>
+        <option value="datascience">Data Science</option>
+        <option value="businessdevelopment">Business Development</option>
+      </select>
+    </div>
+    <div>
+      Currently student/working professional:
+      <input type="radio" name="profession" id="" />student
+      <input type="radio" name="profession" id="" />working
+      professional
+    </div>
+    <div>
+      <div>Why do you want to learn those courses?</div>
+      <textarea
+        name="purpose"
+        id=""
+        cols="60"
+        rows="03"
+        placeholder="Enter your purpose of choosing this career"
+      ></textarea>
+    </div>
+  </body>
+</html>
