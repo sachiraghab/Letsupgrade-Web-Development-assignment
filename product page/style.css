@@ -1,0 +1,82 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-size: 30px;
+}
+.banner{
+    height: 30vh;
+    max-height: 300px;
+    overflow: hidden;
+    background-image: url("image/banner.jpg");
+    position:sticky;
+    width:100vw;
+}
+
+.banner p{
+    text-align: center;
+    color:whitesmoke;
+    font:80px bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 25px;
+}
+
+.product-container{
+    width: 100vw;
+    margin:0% auto;
+    margin-top: 20px;
+    justify-items: center;
+}
+
+.product{
+    max-width:28%;
+    font-size:1em;
+    height: 23%;
+    margin:0% 2% 2% 2%;
+    padding:1%;
+    background-color:darkseagreen;
+    float:left;
+    border:2px solid green;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.product:hover{
+    background-color: darkgrey;
+    border-color: black;
+}
+.product-image{
+    /* margin: 1% 0; */
+    display:flex;
+    justify-content: center;
+    
+}
+.product h2{
+    font-size: 1em;
+}
+.actual, .marked{
+    font-size: 0.9em;
+    margin:0 5px;
+}
+.marked{
+    text-decoration: line-through;
+    font-style: italic;
+}
+.actual{
+    font-weight: bold;
+    font-size: 0.99em;
+}
+.product p{
+    margin: 16px;
+    font-size: 0.75em;
+}
+.product h2, .product p{
+    text-align:center;
+}
+
+.product img{
+    width: 9em;
+    margin: -1em 0;
+    clip-path:circle(35%);
+    text-align:center;
+    border:2px solid black;
+}
